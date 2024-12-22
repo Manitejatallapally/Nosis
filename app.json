@@ -1,0 +1,50 @@
+{
+  "expo": {
+    "name": "Nosis-App",
+    "slug": "Nosis-App",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/splash-icon.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/splash-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.maniteja77.NosisApp"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/splash-icon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "d2db51d2-a7d3-48a5-8d0e-02ceb39573b1"
+      }
+    }
+  }
+}
